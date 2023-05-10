@@ -23,7 +23,7 @@ pipeline {
             }
         }
         st
-        ºage('Static code analysis') {
+        age('Static code analysis') {
             steps {
                 sh './gradlew checkstyleMain'
                 publishHTML (target:[
