@@ -22,8 +22,7 @@ pipeline {
                 sh './gradlew jacocoTestCoverageVerification'
             }
         }
-        st
-        age('Static code analysis') {
+        stage('Static code analysis') {
             steps {
                 sh './gradlew checkstyleMain'
                 publishHTML (target:[
